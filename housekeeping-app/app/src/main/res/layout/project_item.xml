@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.wfuhui.housekeeping.components.ProjectImageView
+        android:id="@+id/pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.wfuhui.housekeeping.components.ProjectImageView>
+
+    <TextView
+        android:id="@+id/name"
+        android:text=""
+        style="@style/name"
+        android:lines="1"
+        android:layout_width="match_parent"
+        tools:ignore="MissingConstraints"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/price"
+        style="@style/price"
+        android:text="￥00.00/次"
+        android:layout_width="match_parent"
+        tools:ignore="MissingConstraints"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.crazyandcoder:citypicker:6.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0b49ce5d3fe04de1288d530f9fa45120/citypicker-6.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0b49ce5d3fe04de1288d530f9fa45120/citypicker-6.0.2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.crazyandcoder/citypicker/6.0.2/ebce40e81595b8bde0f3b8168bf9b03f8d13de89/citypicker-6.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

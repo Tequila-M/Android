@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.biyesheji.modules.project.dao.ProjectDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.biyesheji.modules.project.entity.ProjectEntity" id="projectMap">
+        <result property="id" column="id"/>
+        <result property="projectName" column="project_name"/>
+        <result property="price" column="price"/>
+        <result property="remark" column="remark"/>
+        <result property="picUrl" column="pic_url"/>
+        <result property="totalPeople" column="total_people"/>
+        <result property="createTime" column="create_time"/>
+    </resultMap>
+
+	<select id="queryObject" resultType="com.biyesheji.modules.project.entity.ProjectEntity">
+		select * from appoint_project where id = #{value}
+	</select>
+
+	<select id="queryList" resultType="com.biyesheji.modules.project.entity.ProjectEntity">
+		select p.*,c.category_name as 'category.categoryName' from appoint_project p 
+		left join appoint_category c on c.id = p.category_id
+		<where>
+			<if test="categoryId != null and categoryId != -1">
+				and p.category_id = #{categoryId}
+			</if>
+			<if test="projectName != null and projectName.trim() != ''">
+				and `project_name` like concat('%',#{projectName},'%') 
+			</if>
+		</where>
+        <choose>
+            <when test="sidx != null and sidx.trim() != ''">
+                order by ${sidx} ${order}
+            </when>
+			<otherwise>
+                order by id desc
+			</otherwise>
+        </choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+	
+ 	<select id="queryTotal" resultType="int">
+		select count(*) from appoint_project p
+		<where>
+			<if test="categoryId != null and categoryId != -1">
+				and p.category_id = #{categoryId}
+			</if>
+			<if test="projectName != null and projectName.trim() != ''">
+				and `project_name` like concat('%',#{projectName},'%') 
+			</if>
+		</where>
+	</select>
+	 
+	<insert id="save" parameterType="com.biyesheji.modules.project.entity.ProjectEntity" useGeneratedKeys="true" keyProperty="id">
+		insert into appoint_project
+		(
+			`project_name`, 
+			`price`, 
+			`remark`, 
+			`pic_url`, 
+			`total_people`, 
+			`category_id`, 
+			`create_time`
+		)
+		values
+		(
+			#{projectName}, 
+			#{price}, 
+			#{remark}, 
+			#{picUrl}, 
+			#{totalPeople}, 
+			#{categoryId}, 
+			#{createTime}
+		)
+	</insert>
+	 
+	<update id="update" parameterType="com.biyesheji.modules.project.entity.ProjectEntity">
+		update appoint_project 
+		<set>
+			<if test="projectName != null">`project_name` = #{projectName}, </if>
+			<if test="price != null">`price` = #{price}, </if>
+			<if test="remark != null">`remark` = #{remark}, </if>
+			<if test="picUrl != null">`pic_url` = #{picUrl}, </if>
+			<if test="totalPeople != null">`total_people` = #{totalPeople}, </if>
+			<if test="categoryId != null">`category_id` = #{categoryId}, </if>
+			<if test="createTime != null">`create_time` = #{createTime}</if>
+		</set>
+		where id = #{id}
+	</update>
+	
+	<delete id="delete">
+		delete from appoint_project where id = #{value}
+	</delete>
+	
+	<delete id="deleteBatch">
+		delete from appoint_project where id in 
+		<foreach item="id" collection="array" open="(" separator="," close=")">
+			#{id}
+		</foreach>
+	</delete>
+
+</mapper>

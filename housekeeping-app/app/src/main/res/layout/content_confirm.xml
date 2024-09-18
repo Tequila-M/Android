@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/project"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+        <View android:layout_height="1px" android:background="#ddd" android:layout_width="fill_parent"></View>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/address"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="请选择地址"></TextView>
+
+        </LinearLayout>
+        <View android:layout_height="1px" android:background="#ddd" android:layout_width="fill_parent"></View>
+
+        <LinearLayout
+            android:background="@drawable/underline"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/formLable"
+                android:width="120dp"
+                android:text="预约日期"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:text=""
+                android:background="@drawable/form_edit_text"
+                android:id="@+id/appointDate"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="选择预约日期"></TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@drawable/underline"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/formLable"
+                android:width="120dp"
+                android:text="公司"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"></Spinner>
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/times"
+            android:layout_width="match_parent"
+            android:numColumns="3"
+            android:verticalSpacing="4dp"
+            android:horizontalSpacing="4dp"
+            android:layout_height="wrap_content"></GridView>
+
+        <EditText
+            android:id="@+id/remark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/input"
+            android:gravity="top"
+            android:hint="请输入备注"
+            android:lines="6"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/amount"
+            style="@style/price"
+            android:layout_width="wrap_content"
+            android:text="0.00"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:gravity="right"
+            android:layout_height="wrap_content"></TextView>
+
+        <Button
+            android:id="@+id/pay"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="#e64340"
+            android:textColor="#fff"
+            android:layout_gravity="right"
+            android:text="确认支付"
+            ></Button>
+
+    </LinearLayout>
+
+</LinearLayout>

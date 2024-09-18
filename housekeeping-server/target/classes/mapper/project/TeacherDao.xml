@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.biyesheji.modules.project.dao.TeacherDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.biyesheji.modules.project.entity.TeacherEntity" id="teacherMap">
+        <result property="id" column="id"/>
+        <result property="realName" column="real_name"/>
+        <result property="mobile" column="mobile"/>
+        <result property="picUrl" column="pic_url"/>
+        <result property="createTime" column="create_time"/>
+    </resultMap>
+
+	<select id="queryObject" resultType="com.biyesheji.modules.project.entity.TeacherEntity">
+		select * from appoint_teacher where id = #{value}
+	</select>
+
+	<select id="queryList" resultType="com.biyesheji.modules.project.entity.TeacherEntity">
+		select d.* from appoint_teacher d
+        <choose>
+            <when test="sidx != null and sidx.trim() != ''">
+                order by ${sidx} ${order}
+            </when>
+			<otherwise>
+                order by id desc
+			</otherwise>
+        </choose>
+		<if test="offset != null and limit != null">
+			limit #{offset}, #{limit}
+		</if>
+	</select>
+	
+ 	<select id="queryTotal" resultType="int">
+		select count(*) from appoint_teacher 
+	</select>
+	 
+	<insert id="save" parameterType="com.biyesheji.modules.project.entity.TeacherEntity" useGeneratedKeys="true" keyProperty="id">
+		insert into appoint_teacher
+		(
+			`real_name`, 
+			`mobile`, 
+			`pic_url`, 
+			`specialty`, 
+			`remark`, 
+			`create_time`
+		)
+		values
+		(
+			#{realName}, 
+			#{mobile}, 
+			#{picUrl}, 
+			#{specialty}, 
+			#{remark}, 
+			#{createTime}
+		)
+	</insert>
+	 
+	<update id="update" parameterType="com.biyesheji.modules.project.entity.TeacherEntity">
+		update appoint_teacher 
+		<set>
+			<if test="realName != null">`real_name` = #{realName}, </if>
+			<if test="mobile != null">`mobile` = #{mobile}, </if>
+			<if test="picUrl != null">`pic_url` = #{picUrl}, </if>
+			<if test="specialty != null">`specialty` = #{specialty}, </if>
+			<if test="remark != null">`remark` = #{remark}, </if>
+			<if test="createTime != null">`create_time` = #{createTime}</if>
+		</set>
+		where id = #{id}
+	</update>
+	
+	<delete id="delete">
+		delete from appoint_teacher where id = #{value}
+	</delete>
+	
+	<delete id="deleteBatch">
+		delete from appoint_teacher where id in 
+		<foreach item="id" collection="array" open="(" separator="," close=")">
+			#{id}
+		</foreach>
+	</delete>
+
+</mapper>

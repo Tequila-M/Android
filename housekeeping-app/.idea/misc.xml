@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.275" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/drawable/button.xml" value="0.23703703703703705" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/drawable/button_default.xml" value="0.18888888888888888" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/drawable/button_default_normal.xml" value="0.18888888888888888" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/drawable/button_default_pressed.xml" value="0.18888888888888888" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/drawable/button_normal.xml" value="0.18888888888888888" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/drawable/button_pressed.xml" value="0.18888888888888888" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/drawable/form_edit_text.xml" value="0.23703703703703705" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/drawable/ic_add_circle_black_24dp.xml" value="0.23703703703703705" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.23703703703703705" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.23703703703703705" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/drawable/ic_launcher_background.xml" value="0.23703703703703705" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.18888888888888888" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/drawable/ic_person_black_24dp.xml" value="0.18888888888888888" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/drawable/ic_shopping_cart_black_24dp.xml" value="0.18888888888888888" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/drawable/ic_view_list_black_24dp.xml" value="0.18888888888888888" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/drawable/underline.xml" value="0.18888888888888888" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/activity_address.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/activity_address_add.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/activity_comment.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/activity_confirm.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/activity_detail.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/activity_list.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/activity_login.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/activity_main.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/activity_order.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/activity_pay.xml" value="0.12588652482269502" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/activity_register.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/activity_teacher_detail.xml" value="0.32395833333333335" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/activity_user.xml" value="0.32395833333333335" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/address_item.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/classify_item.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/content_address.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/content_address_add.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/content_comment.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/content_confirm.xml" value="0.371875" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/content_detail.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/content_list.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/content_login.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/content_order.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/content_pay.xml" value="0.32395833333333335" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/content_register.xml" value="0.32395833333333335" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/content_teacher_detail.xml" value="0.32395833333333335" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/content_user.xml" value="0.32395833333333335" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/evaluation_item.xml" value="0.32395833333333335" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/fragment_classify.xml" value="0.32395833333333335" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/fragment_home.xml" value="0.32395833333333335" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/fragment_mine.xml" value="0.32395833333333335" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/order_item.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/order_project_item.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/project_item.xml" value="0.6" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/teacher_item.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/layout/time_item.xml" value="0.25885416666666666" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/menu/bottom_nav_menu.xml" value="0.371875" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.275" />
+        <entry key="..\:/Codefield/Code_BYSJ/code-android/housekeeping-app/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.275" />
+      </map>
+    </option>
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

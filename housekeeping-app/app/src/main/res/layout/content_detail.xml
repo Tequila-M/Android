@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.project.DetailActivity"
+    android:orientation="vertical"
+    android:background="#f7f7f7"
+    tools:showIn="@layout/activity_detail">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <com.youth.banner.Banner
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:delay_time="2000"
+        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/name"
+        style="@style/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:id="@+id/price"
+        style="@style/price"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/title"
+                android:text="评价"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+
+            <com.wfuhui.housekeeping.components.EvaluationListView
+                android:id="@+id/evaluation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.wfuhui.housekeeping.components.EvaluationListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content">
+    <TextView
+        style="@style/title"
+        android:text="详情描述"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:id="@+id/describe"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buy"
+            android:background="#e64340"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:text="立即预约"
+            ></Button>
+
+    </LinearLayout>
+
+</LinearLayout>
